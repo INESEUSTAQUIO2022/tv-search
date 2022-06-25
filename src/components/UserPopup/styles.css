@@ -1,0 +1,140 @@
+#user-popup-area {
+  margin-left: auto;
+}
+
+#user-popup-area > img,
+#user-popup-area > img:hover {
+  border-width: 8px;
+  border-style: solid;
+}
+
+#user-popup-area > img {
+  border-color: transparent;
+  
+  border-radius: 50%;
+  width:  64px;
+  height: 64px;
+
+  cursor: pointer;
+}
+
+#user-popup-area > img:hover {
+  border-color: var(--midnight-blue);
+}
+
+#user-popup {
+  position: absolute;
+  right: 16px;
+  top: 24px;
+  
+  box-shadow: var(--smooth-shadow);
+  box-sizing: border-box;
+  min-width: 256px;
+  max-width: 100%;
+  padding: 12px;
+
+  background-color: white;
+  border-radius: 8px;
+
+  flex-direction: column;
+  align-items: center;
+  display: none;
+
+  text-align: center;
+
+  z-index: 2;
+}
+
+#user-popup span {
+  color: var(--dracula-orchid);
+}
+
+#user-popup img {
+  border-radius: 50%;
+  width:  96px;
+  height: 96px;
+
+  margin-bottom: 8px;
+}
+
+#user-popup #display-name {
+  font-size: 112.5%;
+  font-weight: 600;
+}
+
+#user-popup #email,
+#user-popup #phone-number {
+  align-items: center;
+  display: flex;
+}
+
+#user-popup #email span {
+  font-size: 82.5%;
+  font-weight: 400;
+  
+  word-break: break-all;
+  max-width: 256px;
+}
+
+#user-popup #email #check-icon {
+  width:  16px;
+  height: 16px;
+  
+  fill: var(--_1984);
+  
+  display: none;
+  margin-left: 2px;
+}
+
+#user-popup hr {
+  margin: 16px 0;
+
+  border: 1px solid var(--city-lights);
+
+  width: 100%;
+}
+
+#user-popup .data {
+  align-self: flex-start;
+  align-items: center;
+  display: flex;
+  
+  margin: 0 4px;
+}
+
+#user-popup .data svg {
+  width:  16px;
+  height: 16px;
+
+  fill: var(--dracula-orchid);
+
+  margin-right: 12px;
+}
+
+#user-popup #favourites-anchor {
+  margin-top: 12px;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+#user-popup #favourites-anchor span {
+  font-weight: 700;
+}
+
+#user-popup #logout-link {
+  text-decoration: none;
+  
+  border: 2px solid var(--soothing-breeze);
+  border-radius: 4px;
+
+  padding: 8px 16px;
+  
+  color: var(--american-river);
+}
+
+@media only screen and (max-width: 768px) {
+  #user-popup #email span {
+    font-size: 75%;
+  }
+}
